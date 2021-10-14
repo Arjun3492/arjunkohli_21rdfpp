@@ -24,13 +24,11 @@ class Homescreen extends StatelessWidget {
                         fontSize: 30,
                         fontWeight: FontWeight.bold),
                   ),
-                  SvgPicture.asset(
-                    "assets/user.svg",
-                  ),
-                  // CircleAvatar(
-                  //   child: SvgPicture.asset("assets/user.svg"),
-                  //   backgroundColor: Colors.transparent,
-                  // )
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundImage: AssetImage("assets/user.png"),
+                    backgroundColor: Colors.transparent,
+                  )
                 ],
               ),
             ),
