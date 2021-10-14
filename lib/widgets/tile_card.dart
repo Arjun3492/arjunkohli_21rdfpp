@@ -19,7 +19,11 @@ class Tilecard extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Bedroom()),
+          PageRouteBuilder(
+              transitionDuration: Duration(seconds: 0),
+              pageBuilder: (cnt, an, anm) {
+                return Bedroom();
+              }),
         );
       },
       child: Card(

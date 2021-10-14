@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'screens/bedroom.dart';
 import 'screens/homescreen.dart';
+import 'widgets/bottom_nav.dart';
 
 void main() {
   runApp(const TouchStoneApp());
@@ -26,18 +27,7 @@ class TouchStoneApp extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Color(0xff0A4DA2),
           body: Homescreen(),
-          bottomNavigationBar: Container(
-            color: Colors.white,
-            height: 56,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SvgPicture.asset("assets/bulb.svg"),
-                SvgPicture.asset("assets/feather-home.svg"),
-                SvgPicture.asset("assets/feather-settings.svg")
-              ],
-            ),
-          ),
+          bottomNavigationBar: BottomNav(),
         ));
   }
 }
