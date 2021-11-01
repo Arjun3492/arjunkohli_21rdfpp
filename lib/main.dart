@@ -20,7 +20,7 @@ class TouchStoneApp extends StatelessWidget {
       SystemUiOverlayStyle(statusBarColor: Colors.transparent),
     );
 
-    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
+    SystemChrome.setEnabledSystemUIOverlays([]);
 
     return MaterialApp(
         debugShowCheckedModeBanner: false,
